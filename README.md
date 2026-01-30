@@ -21,7 +21,7 @@ This project is currently a **work-in-progress (WIP)**.
 2. Clone the repository:
 
 ```bash
-git clone https://github.com/hanbroz01/OOP-Combat-Game.git
+git clone https://github.com/hanbroz01/oop-combat-game.git
 cd OOP-Combat-Game
 python main.py
 ```
