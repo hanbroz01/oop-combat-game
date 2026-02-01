@@ -1,54 +1,106 @@
 # 🛡️ OOP Combat Game (WIP)
 
-A **text-based Python combat game** showcasing **object-oriented programming (OOP)** concepts.  
-This project is currently a **work-in-progress (WIP)**.
+A **text-based Python combat game** built to practice and demonstrate **object-oriented programming (OOP)** concepts such as **inheritance, encapsulation, and method reuse**.
+
+This project is an **iterative work-in-progress (WIP)** and primarily serves as a **learning and experimentation project**.
+
+---
 
 ## Description
 
-- Demonstrates **Python OOP principles**: classes, inheritance, and methods.  
-- Features:
-  - **Player** and **Monster** classes with health, power, and level
-  - Attack and damage mechanics
-  - Player leveling system
-  - Monster rage mode
-- Focused on **combat mechanics**; gameplay is minimal but functional for testing.
+This project focuses on **clean, readable OOP design** rather than full gameplay complexity.
 
-> ⚠️ **Work-in-progress:** Many features are still being added, such as full gameplay loops, multiple monsters, items, and a scoring system.
+### Current highlights:
+
+- Demonstrates core **Python OOP principles**
+- Clear separation of responsibilities using a base class
+- Simple but extendable combat mechanics
+
+> ⚠️ **Work in progress:** Core mechanics are implemented, but full gameplay systems are still under development.
+
+---
+
+## Code Structure
+
+- **`Character`**  
+  Base class containing shared attributes and combat logic:
+  - `health`
+  - `power`
+  - `attack()`
+  - `receive_damage()`
+
+- **`Player (Character)`**  
+  Extends `Character` with:
+  - Leveling system
+  - Stat progression (health & power increase)
+
+- **`Monster (Character)`**  
+  Extends `Character` with:
+  - Rage mode that temporarily doubles power
+
+This structure allows easy expansion with new character types, enemies, or mechanics.
+
+---
 
 ## Installation
 
-1. Ensure you have **Python 3.x** installed.
-2. Clone the repository:
+### Requirements
+
+- **Python 3.10+** (tested)
+
+### Setup
 
 ```bash
 git clone https://github.com/hanbroz01/oop-combat-game.git
-cd OOP-Combat-Game
+cd oop-combat-game
 python main.py
 ```
 
 ## Usage
 
-- Running `main.py` creates a **Player** and a **Monster** instance.
-- The **Player** can attack the monster and vice versa.
-- Health, power, and level changes are displayed in the console.
-- Currently, this is primarily a test of **combat and OOP mechanics**.
+Running `main.py` currently demonstrates the **core combat mechanics** using the Player and Monster classes:
 
-## Features (Current WIP)
+- One **Player** and one **Monster** are created
+- Hard-coded attacks show damage, health changes, leveling, and rage
+- Console output provides clear feedback for each action
+
+> ⚠️ **Note:** This version is purely **mechanics-focused**. There is no actual gameplay loop, randomness, or player input yet. Every run produces the same deterministic output, which is ideal for testing and explaining OOP design.
+
+---
+
+## Features (Current)
 
 - Player leveling system
-- Monster rage mechanic (power doubling)
-- Combat with damage tracking
-- Prevents health from dropping below zero
-- Console feedback for actions
+- Monster rage mechanic (temporary power boost)
+- Combat with fixed damage tracking
+- Health floor (prevents negative health)
+- Clear console feedback for actions
+- Easy to extend and test new mechanics
 
-## Future Plans
+---
 
-- Multiple monsters per session
-- Inventory, items, and healing mechanics
-- Full game loop with turns and win/lose conditions
-- Optional GUI interface
+## Planned Features
+
+- **Turn-based game loop:** allow players and monsters to take turns until one wins
+- **Multiple monsters per session:** introduce several enemies for more strategic combat
+- **Inventory and items:** healing potions, buffs, or weapons to add strategy
+- **Player choices:** attack, heal, or use items, potentially with randomized outcomes
+- **Win / lose conditions and scoring:** track success, experience, or rewards
+- **Optional GUI or text-based menu system:** improve user experience beyond console output
+- **Randomized damage / critical hits:** add unpredictability for replayability
+- **Save/load system:** keep player progress for longer sessions
+
+---
 
 ## Notes
 
-- Intended as a **learning/prototype project**.
-- Safe for testing **Python OOP concepts**.
+- Built as a **learning and prototype project**
+- Focuses on **readability, structure, and extensibility**
+- Deterministic output ensures mechanics are clear and easy to explain
+- Future iterations will introduce gameplay loops, randomness, and interactivity
+
+---
+
+### ⭐ Why this project?
+
+This repository is part of my learning journey and is designed to clearly demonstrate how **object-oriented design** can be applied to game mechanics in Python.
