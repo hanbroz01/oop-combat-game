@@ -92,6 +92,47 @@ Running `main.py` currently demonstrates the **core combat mechanics** using the
 
 ---
 
+## Example Gameplay
+
+Here is an example of running the current combat mechanics:
+
+```text
+Testing:
+These are the starting stats for Han:
+Level = 1
+Health = 3
+Power = 1
+
+Han attacks Goblin for 1 damage!
+
+Goblin received 1 damage.
+
+Goblin attacks Han for 1 damage!
+
+Han received 1 damage.
+
+
+----------------------------------------
+
+Goblin received 100 damage.
+
+Han leveled up! Level: 2, Health: 3, Power: 2
+
+----------------------------------------
+
+Goblin is raging! Power doubled to 2.
+Goblin attacks Han for 2 damage!
+
+Han received 2 damage.
+
+
+Demo complete!
+```
+
+> ⚠️ **Note:** This is currently a **deterministic test run** to demonstrate combat mechanics. There is no actual gameplay loop or player input yet. Each run produces the same output, making it ideal for testing and explaining OOP concepts.
+
+---
+
 ## Notes
 
 - Built as a **learning and prototype project**
